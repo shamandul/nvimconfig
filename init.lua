@@ -9,3 +9,4 @@ vim.o.shiftwidth = 4
 vim.o.smartindent = true
 
 require "plugins"
+require'lspconfig'.pyright.setup{}

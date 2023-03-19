@@ -10,22 +10,21 @@ vim.cmd([[
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  	-- Packer can manage itself
-  	use 'wbthomason/packer.nvim'
-  	use {
- 	 'nvim-telescope/telescope.nvim',
-	 requires = {{'nvim-lua/plenary.nvim'}}
-        }
+  -- Packer can manage itself
+  use 'wbthomason/packer.nvim'
+use {
+		'nvim-telescope/telescope.nvim',
+		requires = {{'nvim-lua/plenary.nvim'}}
+  }
 	use {
-        'nvim-treesitter/nvim-treesitter',
-        run = ':TSUpdate'
-        } 
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
 	use 'nvim-treesitter/playground'
 	use {
-    	   "williamboman/nvim-lsp-installer",
-    	   "neovim/nvim-lspconfig",
+		"williamboman/nvim-lsp-installer",
+        "neovim/nvim-lspconfig",
 	}
-  
 
 end
 )
