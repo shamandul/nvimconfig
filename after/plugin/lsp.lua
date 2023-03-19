@@ -9,15 +9,15 @@ lspconfig.tsserver.setup {}
 lspconfig.rust_analyzer.setup {
   -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
-   	 ['rust-analyzer'] = {},
-    },
+    ['rust-analyzer'] = {},
+  },
 }
 lspconfig.intelephense.setup {
   settings = {
-     	['intelephense'] = {
-		on_attach = on_attach,
-		flags = lsp_flags,
-    	},
+    ['intelephense'] = {
+      on_attach = on_attach,
+      flags = lsp_flags,
+    },
   },
 }
 
