@@ -19,14 +19,31 @@ use {
 	use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
-  }
+  } 
 	use 'nvim-treesitter/playground'
 	use {
 		"williamboman/nvim-lsp-installer",
         "neovim/nvim-lspconfig",
 	}
-
+    use {
+      'hrsh7th/nvim-cmp',
+      requires = {
+        'hrsh7th/cmp-nvim-lsp',
+        'hrsh7th/cmp-buffer',
+        'hrsh7th/cmp-path',
+        'hrsh7th/cmp-cmdline',
+      } 
+    }
+    use {
+        'lewis6991/gitsigns.nvim',
+         -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
+    }
+    use "EdenEast/nightfox.nvim"
+    use 'tpope/vim-fugitive'
+    use 'tpope/vim-surround'
+    use 'tpope/vim-commentary'
+    use 'feline-nvim/feline.nvim'
+    use 'nvim-tree/nvim-web-devicons'
 end
 )
-
-
+ 

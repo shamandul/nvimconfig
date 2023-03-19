@@ -8,5 +8,8 @@ vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
 vim.o.smartindent = true
 
+vim.cmd("colorscheme carbonfox")
+
 require "plugins"
-require'lspconfig'.pyright.setup{}
+require 'lspconfig'.pyright.setup{}
+ 
