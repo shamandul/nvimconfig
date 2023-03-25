@@ -30,3 +30,4 @@ require('telescope').setup{
 }
 
 vim.keymap.set('n', '<leader>pp', require"telescope.builtin".find_files, {remap = false})
+vim.keymap.set('n', '<leader>po', require"telescope.builtin".git_files, {remap = false})
